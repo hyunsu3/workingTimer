@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- 헤더 섹션 -->
-    <div class="header">
-      <div class="clock-card">
-        <div class="date-text" id="date"></div>
-        <div class="time-text" id="clock"></div>
+    <div class="wrapper">
+      <!-- 헤더 섹션 -->
+      <div class="header">
+        <div class="clock-card">
+          <div class="date-text" id="date"></div>
+          <div class="time-text" id="clock"></div>
+        </div>
+        <button id="addTimerBtn">타이머 추가</button>
       </div>
-      <button id="addTimerBtn">타이머 추가</button>
+
+      <!-- 타이머 리스트 -->
+      <div id="timerContainer"></div>
+
+      <form id="todo-form">
+        <input type="text" placeholder="Write a to do and enter!" />
+      </form>
+      <ul id="todo-list"></ul>
+      <!--명언-->
+      <div id="quote">
+        <span style="font-size: 2em"></span>
+        <span></span>
+      </div>
     </div>
-
-    <!-- 타이머 리스트 -->
-    <div id="timerContainer"></div>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Write a to do and enter!" />
-    </form>
-    <ul id="todo-list"></ul>
-    <!--명언-->
-    <div id="quote">
-      <span style="font-size: 2em"></span>
-      <span></span>
-    </div>
-
     <script src="app.js"></script>
     <script src="clock.js"></script>
     <script src="quotes.js"></script>
